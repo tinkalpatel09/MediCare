@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    tools:context=".BillingActivity">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/toplinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/back6"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/billing" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Billing"
+                        style="@style/toptext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:layout_marginRight="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        app:cardElevation="10dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:focusableInTouchMode="true"
+                                android:textColorHint="@color/black">
+
+                                <EditText
+                                    android:id="@+id/editTextSearch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:drawableLeft="@drawable/search_vector"
+                                    android:paddingLeft="10dp"
+                                    style="@style/cardviewtext"
+                                    android:drawablePadding="15dp"
+                                    android:hint="Search File Number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <Button
+                                android:id="@+id/btnSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_margin="20dp"
+                                android:text="Search"
+                                style="@style/buttonStyle"
+                                android:background="@drawable/btn_press"/>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    style="@style/headingText"
+                    android:id="@+id/textViewHeading"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patient's Expenses Billing" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    style="@style/cardviewtext"
+                    android:id="@+id/textViewFileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="File Number : ----" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    style="@style/cardviewtext"
+                    android:id="@+id/textViewFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name : ---------" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black"/>
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewConsultationCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="consultationCost : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewTestCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="testCost : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewPharmacyCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="pharmacyCost : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewReportCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="reportCost : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewOtherCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="otherCost : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewTax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="tax : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewTotalCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="totalCost : ----" />
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/black">
+
+                        <EditText
+                            android:id="@+id/editTextPaymentPayed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            style="@style/cardviewtext"
+                            android:hint="Payment Payed*" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            style="@style/cardviewtext"
+                            android:text="Mode Of Payment*"/>
+
+
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupMethod"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonCC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Credit Card"
+                                style="@style/cardviewtext"/>
+
+                            <RadioButton
+                                android:id="@+id/radioButtonDC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Debit Card"
+                                style="@style/cardviewtext"/>
+
+                            <RadioButton
+                                android:id="@+id/radioButtonCash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cash"
+                                style="@style/cardviewtext"/>
+
+                            <RadioButton
+                                android:id="@+id/radioButtonETransfer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="E-Transfer"
+                                style="@style/cardviewtext"/>
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/hintText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Fields with * are compulsory" />
+
+
+                    <Button
+                        android:id="@+id/btnGenrateBill"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="50dp"
+                        android:text="Genrate Bill"
+                        style="@style/buttonStyle"
+                        android:background="@drawable/btn_press" />
+
+
+
+
+
+
+
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutDataMissing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewMissingData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/headingText"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center"
+                        android:text="HINT"/>
+
+
+
+
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

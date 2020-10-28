@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/medicarelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/medicarelogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DoctorListActivity"></activity>
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DoctorChatActivity" />
+        <activity android:name=".ListChatActivity" />
+        <activity android:name=".PatientChatActivity" />
+        <activity android:name=".PatientActivity" />
+        <activity android:name=".AnalysisActivity" />
+        <activity android:name=".MedicineActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity android:name=".BillingActivity" />
+        <activity android:name=".PatientDetailsActivity" />
+        <activity android:name=".ListOfPatientsSec" />
+        <activity android:name=".MedicalExpenses" />
+        <activity android:name=".EditPatientSecretary" />
+        <activity android:name=".AddNewPatientActivity" />
+        <activity android:name=".SecretaryActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

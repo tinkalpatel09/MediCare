@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "42835594288",
+    "firebase_url": "https://medicaredb-29ee8.firebaseio.com",
+    "project_id": "medicaredb-29ee8",
+    "storage_bucket": "medicaredb-29ee8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42835594288:android:9785e5256b7915c6ffb1f5",
+        "android_client_info": {
+          "package_name": "com.example.medicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42835594288-87o1f0b3j2ll0ndbv7j8i92t85kdl5l2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicare",
+            "certificate_hash": "4767eb8d8d713c9a7ead4e2ce780f21e58cbb2aa"
+          }
+        },
+        {
+          "client_id": "42835594288-8mebbritj7eucv26pat3hu2nmm71scp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ_v9IqOvpW5_nTcKPeWlYzN8tYhwIoBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42835594288-8mebbritj7eucv26pat3hu2nmm71scp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

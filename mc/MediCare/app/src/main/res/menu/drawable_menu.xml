@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/healthAnalysis"
+            android:icon="@drawable/ic_health"
+            android:title="Medical Report" />
+
+        <item
+            android:id="@+id/medicine"
+            android:icon="@drawable/ic_medicine"
+            android:title="Medicine" />
+        <item
+            android:id="@+id/PatientDetails"
+            android:icon="@drawable/ic_list"
+            android:title="File Analysis" />
+
+        <item
+            android:id="@+id/appointement"
+            android:icon="@drawable/ic_appointment"
+            android:title="Emergency Chat" />
+
+        <item
+            android:id="@+id/listOfPatients"
+            android:icon="@drawable/ic_list"
+            android:title="Patients List" />
+
+        <item
+            android:id="@+id/medicalExpense"
+            android:icon="@drawable/ic_expense"
+            android:title="Medical Expenses" />
+
+        <item
+            android:id="@+id/billing"
+            android:icon="@drawable/ic_billing"
+            android:title="Billing" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>
